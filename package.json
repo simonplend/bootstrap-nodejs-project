@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-nodejs-project",
+  "version": "1.0.0",
+  "description": "Command line tool for starting new Node.js projects",
+  "bin": "./bin/bootstrap.sh",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Simon Plenderleith <simon@simonplend.co.uk> (https://simonplend.com)",
+  "license": "MIT",
+  "dependencies": {
+    "covgen": "^3.2.0",
+    "gitignore": "^0.6.0",
+    "mrm": "^2.6.0",
+    "mrm-task-ci": "^0.3.0",
+    "mrm-task-editorconfig": "^2.1.0",
+    "mrm-task-eslint": "^2.1.0",
+    "mrm-task-license": "^3.4.0",
+    "mrm-task-lint-staged": "^3.1.0",
+    "mrm-task-prettier": "^3.2.0",
+    "mrm-task-readme": "^2.4.0"
+  }
+}
