@@ -1,4 +1,14 @@
-# create-nodejs-project
+# bootstrap-nodejs-project
+
+This is a command line tool for bootstrapping and configuring a new Node.js
+project. It uses a Bash shell script and the configuration codemods tool
+[Mrm](https://mrm.js.org/). I've chosen this setup because:
+
+- Scripting the file creation aspects of new project configuration in Node.js, Python etc. feels clunky.
+- Create an [npm initializer](https://docs.npmjs.com/cli/v6/commands/npm-init)
+package seems painful too
+- Having everything in a package allows dependencies to be pinned to specific
+versions for stability.
 
 ## What does this tool do?
 
@@ -50,24 +60,10 @@ npx github:simonplend/create-nodejs-project
 
 ## Tools
 
-- [Mrm]((https://mrm.js.org/)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
-- [lint-staged](TODO:)
-
-## Inspiration
-
-- https://philna.sh/blog/2019/01/10/how-to-start-a-node-js-project/
-- https://www.netlify.com/blog/2021/03/03/shipping-node.js-at-netlify/
-
-## Implementation approaches
-
-Reasons for using a shell script + `mrm` + this in a package:
-
-- Scripting file system stuff in Node.js, Python etc. requires quite a bit of cruft
-- Create an npm initializer package seems painful - https://docs.npmjs.com/cli/v6/commands/npm-init
-- Having this in a package with the `mrm` dependencies installed means I can pin
-things to a specific version
+- [Mrm](https://mrm.js.org/) - "Codemods for your project config files"
+- [Prettier](https://prettier.io/) - TODO:
+- [ESLint](https://eslint.org/) - TODO:
+- [lint-staged](TODO:) - TODO:
 
 ## TODOs
 
@@ -82,3 +78,8 @@ things to a specific version
 - Issue template
 - Type checking with `ts` and  - `npx mrm typescript`
 - Integrate with the GitHub CLI?
+
+## Inspiration
+
+- https://philna.sh/blog/2019/01/10/how-to-start-a-node-js-project/
+- https://www.netlify.com/blog/2021/03/03/shipping-node.js-at-netlify/
